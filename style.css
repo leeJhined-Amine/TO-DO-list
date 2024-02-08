@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    
 } 
+body{
+    background-color: #605f5f;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -12,21 +14,22 @@
     margin-top: 100px;
     margin-left: 35%;
     margin-right: 35%;
-    padding: 5px;
+    padding: 15px;
+    background-color: bisque;
 }
 h1{ 
-    color: green;
+    color: #000000;
     padding: 5px;
 }
 .list{
     display: flex;
     flex-direction: column;
-    margin: left: 0;
+    margin-right: auto;
 }
 /*input bar*/
 .newTask{
     display: flex;
-    width: 97%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
     background-color: #edeef0;
@@ -45,12 +48,96 @@ h1{
     outline: none;
     background: transparent;
     padding: 15px 50px;
-    background: yellow;
-    color: blue;
+    background: #14213d;
+    color: #fca311;
     font-size: 15px;
-    cursor: pointer;
     border-radius: 30px;
 }
+button{
+    cursor: pointer;
+}
+ul{
+    width: 100%;
+}
+.list{
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 10px 8px 12px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+ul li > *{
+    margin-inline: 5px;
+}
+/* ul li::before{
+    content: ''; */
+    /* position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(https://cdn.icon-icons.com/icons2/2249/PNG/512/checkbox_blank_circle_outline_icon_139816.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px */
+/* } */
+/* ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+} */
+/* svg{
+    padding: 10px 0px 0px 0px;
+} */
+.checked{
+    display: flex;
+    flex-direction: row;
+    p{
+        text-decoration: line-through;
+        color: #605f5f;
+    }
+}
+
+.task2{
+    display: flex;
+    flex-direction: row;
+}
+.task3{
+    display: flex;
+    flex-direction: row;
+}
+li button{
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.hihi{
+    padding-left: 15px;
+}
+.btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-inline: 10px;
+    padding-block: 3px;
+    border-radius: 30px;
+}
+.btn.edit{
+    background-color: #fca311;
+}
+.btn.del{
+    background-color: rgb(242, 44, 44);
+}
+.actions{
+    padding-right: 15px;
+}
+
 
 
 
