@@ -7,6 +7,21 @@ function getTask(){
         });
     }
 }
+
+function check(){
+    let unchecked = document.getElementsByClassName('unchecked');
+    let task = document.getElementsByClassName('hihi');
+for (let i = 0; i < unchecked.length; i++) {
+       unchecked[i].addEventListener("click", function(event) {
+        event.target.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" id="check" class="checked"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 10.07V11a10 10 0 1 1-5.93-9.14"></path><path d="M22 2 11 13l-3-3"></path></g></svg>
+        `;
+        task[i].style.textDecoration = "line-through"
+        
+    });
+
+}
+
+}
 let addBut = document.getElementById('AddB');
 addBut.addEventListener("click",() => {
     let inputValue = document.getElementById('taskInput').value;
@@ -22,7 +37,9 @@ addBut.addEventListener("click",() => {
     </div>
 </li>`
 getTask();
+check();
 
 })
 
 getTask();
+check();
